@@ -9,19 +9,26 @@ Determine if the sentiment of a Tweet is Positive 😄, Neutral 😎, or negativ
 1. Topic Modelling of Restaurant, Film and Literature Review - determine whether a review is about a Restaurant🍜, a Book📖 or a Film🎥
 (Fixing some bugs at the moment🐞)
 
-# About the models
+# About the models 📈
 ### Topic Modelling:
 - ###### Models:
-1. BERT:
-2. roBERTa:
-###### Libraries used: 
+1. **BERT (Bidirectional Encoder Representations from Transformers):** A classification designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers. can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of tasks, such as question answering and language inference, without substantial task-specific architecture modifications.
+2. **roBERTa : (Robustly Optimized BERT Pretraining Approach):** A classification model that builds on BERT and modifies key hyperparameters, removing the next-sentence pretraining objective and training with much larger mini-batches and learning rates.
+###### Libraries used: *pandas, csv, sklearn, simpletransformers, matplotlib*
 ###### Dataset:
+1. **Movie dataset:** IMDB Dataset of 50K Movie Reviews and a Human-evaluated sentiment label(Golden Label) (can be used for sentiment analysis as well), https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews?resource=download
+2. **Restaurant dataset:** Restaurant Customer Review, consists of 1000 customer's review of a restaurant with a Golden label of 0 (negative) and 1 (positive): https://www.kaggle.com/datasets/vigneshwarsofficial/reviews
+3. **Book dataset:** Amazon Book Review of 5000 reader riviews of books (Pure review text, unlabeled). : https://www.kaggle.com/datasets/shrutimehta/amazon-book-reviews-webscraped?resource=download
+   
 ###### Parameters:
+(Will be uploaded after the bug fix 👌)
 
 ######  Results:
-(Charts or Tables)
+(Will be uploaded after the bug fix 👌)
 ###### Unsolved Issues:
-1. 
+1. Unexpected *ValueError* occurred when executing the second time. Will be fixed later.
+> ValueError: Target is multiclass but average='binary'. Please choose another average setting, one of [None, 'micro', 'macro', 'weighted'].
+ossible solutions: Try another transformer, readjust model parameters, insoect data cleaningness and special characters
 
 ### Sentiment Analysis:
 ###### Models:
