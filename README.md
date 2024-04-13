@@ -9,8 +9,8 @@
 - Dataset:
 - Parameters:
 
-######Results:
-######Unsolved Issues:
+###### Results:
+###### Unsolved Issues:
 1. 
 
 ### Sentiment Analysis:
@@ -19,6 +19,6 @@
 - Dataset: 
 - Parameters:
 
-######Results:
+###### Results:
 
 # Future Work:
